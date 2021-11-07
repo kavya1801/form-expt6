@@ -1,74 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>LAB6</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/1445416/pexels-photo-1445416.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        #set{
+            background-color:rgba(255, 255, 255, 0.6);
+            padding-left: 160px;
+            font-family: cursive;
+            font-weight: 500;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
     <div class="container ml-5">
-      <div class="row  ml-5"><div class="col-sm-8 offset-4"><h3>Employee Registration Form</h3>
-       </div> 
-       <div class="card p-3 offset-4 mt-1 container-fluid" style="width: 25rem;height:40rem;box-shadow: 5px 10px lightsalmon;">
-        <img class="card-img-top" style="width:15rem; padding-left:3rem"src="https://reports.aarthiscan.com/ReportsPortal/assets/images/app_images/login.png" alt="Card image cap">
-        <div class="card-body">
-          <form action="output" method="post"><div class="row">
-            <div class="col-sm-6"><label for="name" class="">Name</label>
-              <input type="text"class="form-control "name="name"></div>
-            <div class="col-sm-6"><label for="empid" class="">EmployeeId</label>
-              <input type="text"class="form-control"name="id"></div>
-          </div>
-            <label for="org" class="">Organization</label>
-            <input type="text"class="form-control"name="org">
-            <label for="gender" class="pt-2">Gender</label>
-            <input type="radio" name="gender" id="male">Male
-            <input type="radio" name="gender" id="female">Female
-            <input type="radio" name="gender" id="others">Others
-            <div class="row pb-2">
-              <div class="col-sm-6"><label for="dep">Department</label></div>
-              <div class="col-sm-6">
-                <select name="dep" class="form-control">
-                  <option value="1"selected Disabled class="text-secondary">department</option>
-                  <option value="2">production</option>
-                  <option value="3">Quality</option>
-                  <option value="4">Sales and purchasing</option>
-                </select> </div></div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="col-sm-12"><label for="exp">Experience
+        <div class="row  ml-5"><div class="col-sm-8 offset-4"><h3>Employee Registration Form</h3>
+         </div> 
+         <div class="card p-3 offset-4 mt-1 container-fluid" style=" padding-left: 880px;width: 28rem;height:49rem;box-shadow: 5px 10px 5px 10px skyblue; border-radius: 7px;" id="set">
+          <img class="card-img-top" style="width:25rem; padding-left:3rem"src="https://as2.ftcdn.net/v2/jpg/03/39/70/91/1000_F_339709166_kKKqiQFynWG7bEkl3LisH3saRrEB0HGa.jpg" alt="Card image cap">
+          <div class="card-body">
+            <form action="output" method="post"><div class="row">
+              <div class="col-sm-12"><label for="name" class="">Employee Name</label>
+                <input type="text"class="form-control "name="name"></div>
+              <div class="col-sm-12"><label for="empid" class="">Employee  ID</label>
+                <input type="text"class="form-control"name="id"></div>
+            </div>
+              <label for="org" class="">Organization Name</label>
+              <input type="text"class="form-control"name="org">
+              <label for="gender" class="pt-2">Gender</label> &emsp14; &emsp14; &emsp14;
+              <input type="radio" name="gender" id="male">Male &emsp14;
+              <input type="radio" name="gender" id="female">Female  &emsp14;
+              <input type="radio" name="gender" id="others">Transgender
+              <div class="row pb-2">
+                <div class="col-sm-4"><label for="dep">Department</label></div>
+                <div class="col-sm-8">
+                  <select name="dep" class="form-control">
+                    <option value="1"selected Disabled class="text-secondary">department</option>
+                    <option value="2">Computer</option>
+                    <option value="3">Communication</option>
+                    <option value="4">Circuit</option>
+                    <option value="5">Civil</option>
+                    <option value="6">Automobile</option>
+                    <option value="7">Mechanical</option>
+                  </select> </div></div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="col-sm-12"><label for="exp">Experience
+                    </label></div>
+                    <div class="col-sm-12"><input type="number" name="exp" class="form-control"id="exp"></div>
+  
+                  </div>
+                  <div class="col-sm-6"><div class="col-sm-12"><label for="phone">Mobile
                   </label></div>
-                  <div class="col-sm-12"><input type="number" name="exp" class="form-control"id="exp"></div>
-
+                  <div class="col-sm-12"><input type="text" name="phone" class="form-control"id="phone"></div>
+  
                 </div>
-                <div class="col-sm-6"><div class="col-sm-12"><label for="phone">Mobile
-                </label></div>
-                <div class="col-sm-12"><input type="text" name="phone" class="form-control"id="phone"></div>
-
+  
               </div>
-
-            </div>
-            <div class="row pt-2">
-              <div class="col-sm-12">
-                <label for="email">E-mail</label>
-
+              <div class="row pt-2">
+                <div class="col-sm-12">
+                  <label for="email">E-mail</label>
+  
+                </div>
+                <div class="col-sm-12">
+                 <input type="email"class="form-control" name="email" id="email">
+                  
+                </div>
               </div>
-              <div class="col-sm-12">
-               <input type="email"class="form-control" name="email" id="email">
-                
-              </div>
-            </div>
-  <button class="btn btn-primary "style="margin-top:1rem;margin-left:9rem"type="submit"onclick="alert('creating your account!')">Login</button>
-          </form>
-        </div>
-    </div></div></div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+    <button class="btn btn-primary "style="margin-top:1rem;margin-left:9rem"type="submit"onclick="alert('Employee Details registered successfully!')">Login</button>
+            </form>
+          </div>
+      </div></div></div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
